@@ -1,0 +1,3 @@
+select distinct  as "Mystery", count(id_movie) as "Nombre de films" from genre join movie_genre on id_genre where id_genre = id, join movie on id_distributor, join distributor on name where ((distributor.id = id_distributor and genre.name = "Mystery") and (distributor.name != "Columbia Pictures" or distributor.name != "Paramount Pictures")) or not title like "T%" group by genre.name;
+
+ select distinct id_movie as "Mystery" as "Nombre de films" from movie_genre join genre on id where id_genre = genre.id, join movie on id_distributor, join distributor on name where ((distributor.id = id_distributor and genre.name = "Mystery") and (distributor.name != "Columbia Pictures" or distributor.name != "Paramount Pictures")) or not title like "T%" group by genre.name;

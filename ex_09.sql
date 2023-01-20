@@ -1,0 +1,1 @@
+select min(duration) as "Duree du film le plus court" from movie where duration != NULL or duration != 0 limit 1;

@@ -1,0 +1,1 @@
+select floor as "Numero etage", sum(seats) as "Nombre total de sieges",count(id) as "Nombre total de salles" from room  group by floor order by sum(seats) asc;

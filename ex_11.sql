@@ -1,0 +1,1 @@
+select distinct genre.name as "Nom du genre", count(id_movie) as "Nombre de films" from genre join movie_genre on id_genre where id_genre = id group by genre.name order by count(id_movie) desc;

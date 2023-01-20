@@ -1,0 +1,1 @@
+select number as "Numero des salles", name as "Nom des salles" from room where seats > 200 and floor != 0;

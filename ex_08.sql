@@ -1,0 +1,1 @@
+select name as "Nom de l' abonnement le plus cher" ,max(price) as "Prix" from subscription group by name order by price desc limit 1;

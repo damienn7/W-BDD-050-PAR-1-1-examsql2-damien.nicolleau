@@ -1,0 +1,1 @@
+select title, director from movie order by title asc;
